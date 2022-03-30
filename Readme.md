@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Андрей Луцевич](https://up.htmlacademy.ru/adaptive/25/user/1970833).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
