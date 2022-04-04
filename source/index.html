@@ -5,16 +5,16 @@
     <title>Сайт фотоприложения «Пинк»</title>
   </head>
   <body class="page__body" >
-    <a class="logo">
-      <img src="img/logo/logo-pink.svg" width="74" height="23" alt="Логотип «Пинк».">
-    </a>
     <header class="main-header">
+      <a class="main-header__logo">
+        <img src="img/logo/logo-pink.svg" width="74" height="23" alt="Логотип «Пинк».">
+      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="#">
                 Главная
@@ -40,37 +40,41 @@
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="heading">Взгляните на жизнь иначе!</h1>
-      <img src="img/main/phone-hand.png" width="320" height="286" alt="Телефон в руке.">
-      <img src="img/main/phone-screen.png" width="111" height="197" alt="Телефон в руке.">
-      <article class="download-app">
-        <div class="download-app__wrapper">
-          <a href="https://www.apple.com/ru/app-store/">
-            Скачать приложение
-          </a>
-          <ul>
-            <li>
-              <a href="https://www.apple.com/ru/app-store/">
-                <img src="img/download/apple-logo.svg" width="47" height="56" alt="Логотип Iphone.">
-              </a>
-            </li>
-            <li>
-              <a href="https://play.google.com/store?hl=ru&gl=US">
-                <img src="img/download/android-logo.svg" width="43" height="47" alt="Логотип Android.">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone?icid=CNavAppsWindowsPhoneApps">
-                <img src="img/download/microsoft-logo.svg" width="44" height="41" alt="Логотип Windows.">
-              </a>
-
-            </li>
-          </ul>
-          <p class="download-app__description">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
-        </div>
-      </article>
+      <header class="header-wrapper">
+        <h1 class="header-wrapper__heading">Взгляните на жизнь иначе!</h1>
+        <article class="download-app">
+          <h2 class="visually-hidden">Скачать приложение на телефон.</h2>
+          <div class="download-app__wrapper-image">
+            <img src="img/main/phone-hand.png" width="320" height="286" alt="Телефон в руке.">
+            <img src="img/main/phone-screen.png" width="111" height="197" alt="Телефон в руке.">
+          </div>
+          <div class="download-app__wrapper">
+            <a href="https://www.apple.com/ru/app-store/">
+              Скачать приложение
+            </a>
+            <ul>
+              <li>
+                <a href="https://www.apple.com/ru/app-store/">
+                  <img src="img/download/apple-logo.svg" width="47" height="56" alt="Логотип Iphone.">
+                </a>
+              </li>
+              <li>
+                <a href="https://play.google.com/store?hl=ru&gl=US">
+                  <img src="img/download/android-logo.svg" width="43" height="47" alt="Логотип Android.">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone?icid=CNavAppsWindowsPhoneApps">
+                  <img src="img/download/microsoft-logo.svg" width="44" height="41" alt="Логотип Windows.">
+                </a>
+              </li>
+            </ul>
+            <p class="download-app__description">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
+        </article>
+      </header>
       <section class="information">
         <div class="information__wrapper">
           <h2 class="visually-hidden">Наше предложение Вам!</h2>
@@ -101,7 +105,7 @@
             </li>
           </ul>
           <img src="img/main/iphone.png" width="157" height="320" alt="Телефон с картинкой на заставке».">
-          <img src="img/main/iphone screen-3.png" width="136" height="245" alt="Картинка на заставке «Всем привет!».">
+          <img src="img/main/iphone-screen-3.png" width="136" height="245" alt="Картинка на заставке «Всем привет!».">
         </div>
       </section>
       <section class="reviews">
@@ -109,20 +113,20 @@
           <h2 class="visually-hidden">Отзывы о нас.</h2>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
-              <cite class="rewiew__author-name">Николай Петров</cite>
-              <p class="rewiew__text">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </blockquote>
             <blockquote class="reviews__item slider__item">
-              <cite class="rewiew__author-name">Николай Петров</cite>
-              <p class="rewiew__text">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </blockquote>
             <blockquote class="reviews__item slider__item">
-              <cite class="rewiew__author-name">Николай Петров</cite>
-              <p class="rewiew__text">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </blockquote>
@@ -135,7 +139,7 @@
         </div>
       </section>
       <section class="price">
-        <div class="price__wrapper">
+        <div class="price__wrapper carousel">
           <h2 class="visually-hidden">Цена.</h2>
           <ul class="price__list carousel__list">
             <li class="price__item carousel__item">
@@ -198,12 +202,10 @@
           </p>
           <img src="img/footer/map.png" width="320" height="200" alt="Адрес на карте.">
         </address>
-        <div class="main-footer__logo">
-          <a class="logo" href="index.html">
-            <img src="img/logo/logo-glasses.svg" width="59" height="40" alt="Логотип «Пинк».">
-            <img src="img/logo/logo-pink.svg" width="74" height="23" alt="Логотип «Пинк».">
-          </a>
-        </div>
+        <a class="main-footer__logo" href="index.html">
+          <img src="img/logo/logo-glasses.svg" width="59" height="40" alt="Логотип «Пинк».">
+          <img src="img/logo/logo-pink.svg" width="74" height="23" alt="Логотип «Пинк».">
+        </a>
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -232,7 +234,7 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright">
+        <div class="main-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">в HTML Academy.</span>
