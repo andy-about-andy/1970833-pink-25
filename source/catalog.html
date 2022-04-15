@@ -3,138 +3,162 @@
   <head>
     <meta charset="utf-8">
     <title>Сайт фотоприложения «Пинк»</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img src="img/logo/logo-pink.svg" width="74" height="23" alt="Логотип «Пинк».">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="main-header__wrapper">
+        <a class="main-header__link-logo" href="index.html">
+          <span class="visually-hidden">Логотип «Пинк».</span>
+          <svg class="main-header__logo-glasses" aria-hidden="true" focusable="false" width="59" height="40" viewBox="0 0 59 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m53.9 6.59 5.03 21.14a1.42 1.42 0 0 1-.75 1.72c-.2.09-.43.13-.65.11h-4.01a11.63 11.63 0 0 1-11.49 10.32c-5.92 0-10.8-4.5-11.49-10.32h-1.96A11.75 11.75 0 0 1 16.97 40c-6 0-10.94-4.57-11.61-10.47H1.45A1.36 1.36 0 0 1 .3 29a1.42 1.42 0 0 1-.24-1.27L5.1 6.6C5.46 4.26 7.64 0 13.5 0c.38 0 .76.16 1.03.44a1.5 1.5 0 0 1 0 2.1c-.27.27-.65.43-1.03.43-4.71 0-5.44 3.7-5.5 4.1L3.34 26.6h2.03a11.75 11.75 0 0 1 11.6-10.3c5.94 0 10.84 4.48 11.6 10.3h1.99a11.63 11.63 0 0 1 11.47-10.19c5.89 0 10.75 4.46 11.48 10.23v-.06h2.14L51 7.08c-.07-.41-.77-4.1-5.5-4.1-.39 0-.76-.17-1.03-.44a1.5 1.5 0 0 1 0-2.1c.27-.28.64-.44 1.03-.44 5.85 0 8.03 4.26 8.38 6.59ZM25.66 29.56a9.12 9.12 0 0 0-.02-2.97 8.85 8.85 0 0 0-8.68-7.38 8.85 8.85 0 0 0-8.82 8.94 8.85 8.85 0 0 0 8.81 8.94c4.4 0 8.04-3.26 8.71-7.53Zm24.94 0a8.75 8.75 0 0 0-8.58-10.23 8.75 8.75 0 0 0-8.58 10.23 8.73 8.73 0 0 0 8.58 7.4c4.33 0 7.91-3.2 8.58-7.4Z" fill="#ffffff"/>
+          </svg>
+          <span class="visually-hidden">Логотип «Пинк».</span>
+          <svg class="main-header__logo-name" aria-hidden="true" focusable="false" width="74" height="23" viewBox="0 0 74 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1.55A1.29 1.29 0 0 1 1.26.26h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8 7.36H2.53v6.8A1.28 1.28 0 0 1 1.27 23 1.27 1.27 0 0 1 0 21.61V1.55Zm8.07 10.97c3.7 0 6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H2.6v9.88l5.48.04ZM21.6 1.39A1.28 1.28 0 0 1 22.85 0a1.27 1.27 0 0 1 1.27 1.39V21.6A1.28 1.28 0 0 1 22.86 23a1.27 1.27 0 0 1-1.27-1.39V1.4ZM30.67 1.42A1.28 1.28 0 0 1 31.93.17h.34a1.54 1.54 0 0 1 1.29.74l13.6 17.4V1.36A1.24 1.24 0 0 1 48.39.12a1.23 1.23 0 0 1 1.23 1.24v20.3a1.14 1.14 0 0 1-1.15 1.17h-.13a1.7 1.7 0 0 1-1.31-.78L33.12 4.25v17.4a1.26 1.26 0 0 1-1.2 1.25 1.23 1.23 0 0 1-1.2-1.25V1.42h-.05ZM55.94 1.39A1.28 1.28 0 0 1 57.2 0a1.27 1.27 0 0 1 1.26 1.39v12.3L71.23.54c.26-.27.62-.43 1-.45a1.27 1.27 0 0 1 1.21 1.26 1.29 1.29 0 0 1-.41.9l-7.95 7.9 8.57 10.52c.23.26.35.6.35.94a1.31 1.31 0 0 1-1.34 1.28 1.23 1.23 0 0 1-1-.58L63.3 11.86l-4.83 4.85v4.88a1.27 1.27 0 0 1-1.26 1.27 1.26 1.26 0 0 1-1.26-1.27V1.4h-.01Z" fill="#ffffff"/>
+          </svg>
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="catalog.html">
+                  Фотографии
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">
+                  Конкурс
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru/">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <section class="intro-wrapper">
+        <h1 class="intro-wrapper__heading">Фотографии<br>пользователей</h1>
+      </section>
     </header>
     <main class="main-container">
-      <header class="header-wrapper">
-        <h1 class="header-wrapper__heading">Фотографии пользователей</h1>
-      </header>
       <section class="catalog">
         <h2 class="catalog__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
         <div class="catalog__foto-day panorama-day">
           <img src="img/catalog/panorama-mobile.jpg" width="320" height="137" alt="Панорама дня.">
-          <div class="panorama-day__author">
-            <span class="panorama-day__author-name">Анна</span>
-            <span class="panorama-day__time-ago">(5 минут назад)</span>
-          </div>
-          <div class="panorama-day__desc">
-            <span class="panorama-day__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</span>
-          </div>
-          <div class="panorama-day__like">
-            <span class="panorama-day__number-like">Нравится: 215</span>
+          <div class="like-wrapper">
+            <div class="like-wrapper__author">
+              <span class="like-wrapper__author-name">Анна</span>
+              <span class="like-wrapper__time-ago">(5 минут назад)</span>
+            </div>
+            <div class="like-wrapper__desc">
+              <span class="like-wrapper__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</span>
+            </div>
+            <div class="like-wrapper__like">
+              <span class="like-wrapper__number-like">Нравится: 215</span>
+            </div>
           </div>
         </div>
         <ul class="catalog__list">
           <li class="catalog__item">
             <img src="img/catalog/photo-1-mobile.jpg" width="280" height="180" alt="Автомобиль вид сбоку возле здания.">
-            <div class="catalog__author-foto">
-              <span class="catalog__author-name">Левон</span>
-              <span class="catalog__time-ago">(5 часов назад)</span>
-            </div>
-            <div class="catalog__desc">
-              <span class="catalog__text">Вчера он на луну летал, сегодня в руки к нам попал.</span>
-            </div>
-            <div class="catalog__like">
-              <span class="catalog__number-like">Нравится: 356</span>
+            <div class="like-wrapper">
+              <div class="like-wrapper__author-foto">
+                <span class="like-wrapper__author-name">Левон</span>
+                <span class="like-wrapper__time-ago">(5 часов назад)</span>
+              </div>
+              <div class="like-wrapper__desc">
+                <span class="like-wrapper__text">Вчера он на луну летал, сегодня в руки к нам попал.</span>
+              </div>
+              <div class="like-wrapper__like">
+                <span class="like-wrapper__number-like">Нравится: 356</span>
+              </div>
             </div>
           </li>
           <li class="catalog__item">
             <img src="img/catalog/photo-2-mobile.jpg" width="280" height="180" alt="Барабанная установка.">
-            <div class="catalog__author-foto">
-              <span class="catalog__author-name">Антон</span>
-              <span class="catalog__time-ago">(12 часов назад)</span>
-            </div>
-            <div class="catalog__desc">
-              <span class="catalog__text">Соседи будут рады!</span>
-            </div>
-            <div class="catalog__like">
-              <span class="catalog__number-like">Нравится: 666</span>
+            <div class="like-wrapper">
+              <div class="like-wrapper__author-foto">
+                <span class="like-wrapper__author-name">Антон</span>
+                <span class="like-wrapper__time-ago">(12 часов назад)</span>
+              </div>
+              <div class="like-wrapper__desc">
+                <span class="like-wrapper__text">Соседи будут рады!</span>
+              </div>
+              <div class="like-wrapper__like">
+                <span class="like-wrapper__number-like">Нравится: 666</span>
+              </div>
             </div>
           </li>
           <li class="catalog__item">
             <img src="img/catalog/photo-3-mobile.jpg" width="280" height="180" alt="Стеклянная стена.">
-            <div class="catalog__author-foto">
-              <span class="catalog__author-name">Борис</span>
-              <span class="catalog__time-ago">(20 часов назад)</span>
-            </div>
-            <div class="catalog__desc">
-              <span class="catalog__text">Здесь могла быть ваша цитата о высоком и вечном.</span>
-            </div>
-            <div class="catalog__like">
-              <span class="catalog__number-like">Нравится: 215</span>
+            <div class="like-wrapper">
+              <div class="like-wrapper__author-foto">
+                <span class="like-wrapper__author-name">Борис</span>
+                <span class="like-wrapper__time-ago">(20 часов назад)</span>
+              </div>
+              <div class="like-wrapper__desc">
+                <span class="like-wrapper__text">Здесь могла быть ваша цитата о высоком и вечном.</span>
+              </div>
+              <div class="like-wrapper__like">
+                <span class="like-wrapper__number-like">Нравится: 215</span>
+              </div>
             </div>
           </li>
           <li class="catalog__item">
             <img src="img/catalog/photo-4-mobile.jpg" width="280" height="180" alt="Крытый базар 'Кубанская бахча'.">
-            <div class="catalog__author-foto">
-              <span class="catalog__author-name">Сергей</span>
-              <span class="catalog__time-ago">(25 часов назад)</span>
-            </div>
-            <div class="catalog__desc">
-              <span class="catalog__text">Самая кубанская в мире!</span>
-            </div>
-            <div class="catalog__like">
-              <span class="catalog__number-like">Нравится: 4</span>
+            <div class="like-wrapper">
+              <div class="like-wrapper__author-foto">
+                <span class="like-wrapper__author-name">Сергей</span>
+                <span class="like-wrapper__time-ago">(25 часов назад)</span>
+              </div>
+              <div class="like-wrapper__desc">
+                <span class="like-wrapper__text">Самая кубанская в мире!</span>
+              </div>
+              <div class="like-wrapper__like">
+                <span class="like-wrapper__number-like">Нравится: 4</span>
+              </div>
             </div>
           </li>
           <li class="catalog__item">
             <img src="img/catalog/photo-5-mobile.jpg" width="280" height="180" alt="Фотография ног на вершине горы.">
-            <div class="catalog__author-foto">
-              <span class="catalog__author-name">Максим</span>
-              <span class="catalog__time-ago">(40 часов назад)</span>
-            </div>
-            <div class="catalog__desc">
-              <span class="catalog__text">Где снег-то?</span>
-            </div>
-            <div class="catalog__like">
-              <span class="catalog__number-like">Нравится: 150</span>
+            <div class="like-wrapper">
+              <div class="like-wrapper__author-foto">
+                <span class="like-wrapper__author-name">Максим</span>
+                <span class="like-wrapper__time-ago">(40 часов назад)</span>
+              </div>
+              <div class="like-wrapper__desc">
+                <span class="like-wrapper__text">Где снег-то?</span>
+              </div>
+              <div class="like-wrapper__like">
+                <span class="like-wrapper__number-like">Нравится: 150</span>
+              </div>
             </div>
           </li>
           <li class="catalog__item">
             <img src="img/catalog/photo-6-mobile.jpg" width="280" height="180" alt="Крыло самолёта в полёте.">
-            <div class="catalog__author-foto">
-              <span class="catalog__author-name">Надежда</span>
-              <span class="catalog__time-ago">(45 часов назад)</span>
-            </div>
-            <div class="catalog__desc">
-              <span class="catalog__text">Всем GM и взаимные лайки!</span>
-            </div>
-            <div class="catalog__like">
-              <span class="catalog__number-like">Нравится: 2560</span>
+            <div class="like-wrapper">
+              <div class="like-wrapper__author-foto">
+                <span class="like-wrapper__author-name">Надежда</span>
+                <span class="like-wrapper__time-ago">(45 часов назад)</span>
+              </div>
+              <div class="like-wrapper__desc">
+                <span class="like-wrapper__text">Всем GM и взаимные лайки!</span>
+              </div>
+              <div class="like-wrapper__like">
+                <span class="like-wrapper__number-like">Нравится: 2560</span>
+              </div>
             </div>
           </li>
         </ul>
@@ -144,24 +168,36 @@
         <img class="download-foto__image" src="img/catalog/photo-7-mobile.jpg" width="280" height="374" alt="Заснеженная дорого в лесу.">
         <ul class="download-foto__list button-icon">
           <li class="button-icon__item">
-            <button class="button-icon__button" type="button" name="Обрезка"></button>
+            <button class="button-icon__button" type="button" name="Обрезка">
+              <svg class="button-icon__crop" aria-hidden="true" focusable="false" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z" fill="#d22856"/>
+              </svg>
+            </button>
           </li>
           <li class="button-icon__item">
-            <button class="button-icon__button" type="button" name="Заливка"></button>
+            <button class="button-icon__button" type="button" name="Заливка">
+              <svg class="button-icon__fill" aria-hidden="true" focusable="false" width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645">
+                <path d="M33.12 17.88 15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24ZM10.41 20 20 10.42 29.59 20H10.41ZM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7ZM48 40H0v3h48v-3Z"/></g>
+              </svg>
+            </button>
           </li>
           <li class="button-icon__item">
-            <button class="button-icon__button" type="button" name="Контрастность"></button>
+            <button class="button-icon__button" type="button" name="Контрастность">
+              <svg class="button-icon__contrast" aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645">
+                <path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24Zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32Z"/><path d="M16 24.29a8.52 8.52 0 0 0 0-17"/></g>
+              </svg>
+            </button>
           </li>
         </ul>
-        <ul class="download-foto__list slider">
-          <li class="slider__item">
-            <input type="range" id="crop" name="crop" min="0" max="50">
+        <ul class="download-foto__list slider-foto">
+          <li class="slider-foto__item">
+            <input class="slider-foto__slider" type="range" id="crop" name="crop" min="0" max="50">
           </li>
-          <li class="slider__item">
-            <input type="range" id="fill" name="fill" min="0" max="50">
+          <li class="slider-foto__item">
+            <input class="slider-foto__slider" type="range" id="fill" name="fill" min="0" max="50">
           </li>
-          <li class="slider__item">
-            <input type="range" id="contrast" name="contrast" min="0" max="50">
+          <li class="slider-foto__item">
+            <input class="slider-foto__slider" type="range" id="contrast" name="contrast" min="0" max="50">
           </li>
         </ul>
         <div class="download-foto__post">
@@ -170,13 +206,19 @@
         </div>
       </section>
     </main>
-    <footer class="form-footer">
-      <div class="form-footer__wrapper">
-        <a class="form-footer__logo" href="index.html">
-          <img src="img/logo/logo-glasses.svg" width="59" height="40" alt="Логотип «Пинк».">
-          <img src="img/logo/logo-pink.svg" width="74" height="23" alt="Логотип «Пинк».">
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <a class="main-footer__link-logo" href="index.html">
+          <span class="visually-hidden">Логотип «Пинк».</span>
+          <svg class="main-footer__logo" aria-hidden="true" focusable="false" width="59" height="40" viewBox="0 0 59 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m53.9 6.59 5.03 21.14a1.42 1.42 0 0 1-.75 1.72c-.2.09-.43.13-.65.11h-4.01a11.63 11.63 0 0 1-11.49 10.32c-5.92 0-10.8-4.5-11.49-10.32h-1.96A11.75 11.75 0 0 1 16.97 40c-6 0-10.94-4.57-11.61-10.47H1.45A1.36 1.36 0 0 1 .3 29a1.42 1.42 0 0 1-.24-1.27L5.1 6.6C5.46 4.26 7.64 0 13.5 0c.38 0 .76.16 1.03.44a1.5 1.5 0 0 1 0 2.1c-.27.27-.65.43-1.03.43-4.71 0-5.44 3.7-5.5 4.1L3.34 26.6h2.03a11.75 11.75 0 0 1 11.6-10.3c5.94 0 10.84 4.48 11.6 10.3h1.99a11.63 11.63 0 0 1 11.47-10.19c5.89 0 10.75 4.46 11.48 10.23v-.06h2.14L51 7.08c-.07-.41-.77-4.1-5.5-4.1-.39 0-.76-.17-1.03-.44a1.5 1.5 0 0 1 0-2.1c.27-.28.64-.44 1.03-.44 5.85 0 8.03 4.26 8.38 6.59ZM25.66 29.56a9.12 9.12 0 0 0-.02-2.97 8.85 8.85 0 0 0-8.68-7.38 8.85 8.85 0 0 0-8.82 8.94 8.85 8.85 0 0 0 8.81 8.94c4.4 0 8.04-3.26 8.71-7.53Zm24.94 0a8.75 8.75 0 0 0-8.58-10.23 8.75 8.75 0 0 0-8.58 10.23 8.73 8.73 0 0 0 8.58 7.4c4.33 0 7.91-3.2 8.58-7.4Z" fill="#D22856"/>
+          </svg>
+          <span class="visually-hidden">Логотип «Пинк».</span>
+          <svg class="main-footer__logo" aria-hidden="true" focusable="false" width="74" height="23" viewBox="0 0 74 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1.55A1.29 1.29 0 0 1 1.26.26h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8 7.36H2.53v6.8A1.28 1.28 0 0 1 1.27 23 1.27 1.27 0 0 1 0 21.61V1.55Zm8.07 10.97c3.7 0 6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H2.6v9.88l5.48.04ZM21.6 1.39A1.28 1.28 0 0 1 22.85 0a1.27 1.27 0 0 1 1.27 1.39V21.6A1.28 1.28 0 0 1 22.86 23a1.27 1.27 0 0 1-1.27-1.39V1.4ZM30.67 1.42A1.28 1.28 0 0 1 31.93.17h.34a1.54 1.54 0 0 1 1.29.74l13.6 17.4V1.36A1.24 1.24 0 0 1 48.39.12a1.23 1.23 0 0 1 1.23 1.24v20.3a1.14 1.14 0 0 1-1.15 1.17h-.13a1.7 1.7 0 0 1-1.31-.78L33.12 4.25v17.4a1.26 1.26 0 0 1-1.2 1.25 1.23 1.23 0 0 1-1.2-1.25V1.42h-.05ZM55.94 1.39A1.28 1.28 0 0 1 57.2 0a1.27 1.27 0 0 1 1.26 1.39v12.3L71.23.54c.26-.27.62-.43 1-.45a1.27 1.27 0 0 1 1.21 1.26 1.29 1.29 0 0 1-.41.9l-7.95 7.9 8.57 10.52c.23.26.35.6.35.94a1.31 1.31 0 0 1-1.34 1.28 1.23 1.23 0 0 1-1-.58L63.3 11.86l-4.83 4.85v4.88a1.27 1.27 0 0 1-1.26 1.27 1.26 1.26 0 0 1-1.26-1.27V1.4h-.01Z" fill="#283645"/>
+          </svg>
         </a>
-        <div class="form-footer__social social">
+        <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
@@ -204,7 +246,7 @@
             </li>
           </ul>
         </div>
-        <div class="form-footer__copyright copyright">
+        <div class="main-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">в HTML Academy.</span>
