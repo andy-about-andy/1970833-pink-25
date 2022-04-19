@@ -50,12 +50,10 @@
         </nav>
       </div>
       <section class="intro-wrapper">
-        <h1 class="intro-wrapper__heading">Взгляните на жизнь<br>иначе!</h1>
+        <h1 class="visually-hidden">Взгляните на жизнь иначе!</h1>
         <article class="download-app">
-          <h2 class="visually-hidden">Скачать приложение на телефон.</h2>
-          <div class="download-app__wrapper-image">
-            <img src="img/header/phone-hand.png" width="320" height="286" alt="Телефон в руке.">
-          </div>
+          <h2 class="download-app__heading">Взгляните на жизнь<br>иначе!</h2>
+          <div class="download-app__wrapper-image"></div>
           <div class="download-app__wrapper">
             <a class="download-app__link" href="https://www.apple.com/ru/app-store/">
               Скачать приложение
@@ -86,16 +84,16 @@
     </header>
     <main class="main-container">
       <section class="information">
-        <div class="information__wrapper">
-          <h2 class="visually-hidden">Наше предложение Вам!</h2>
-          <div class="information__title">
-            <p class="information__text">
-              Устали от серости мегаполиса?
-            </p>
-            <p class="information__text">
-              Нам есть, что вам предложить!
-            </p>
+        <h2 class="visually-hidden">Наше предложение Вам!</h2>
+        <div class="information__title">
+          <p class="information__text">
+            Устали от серости мегаполиса?
+          </p>
+          <p class="information__text">
+            Нам есть, что вам предложить!
+          </p>
           </div>
+        <div class="information__wrapper">
           <ul class="information__list">
             <li class="information__item">
               <h3 class="information__headline">Поднимает настроение</h3>
@@ -117,10 +115,10 @@
             </li>
           </ul>
           <ul class="information__list-image">
-            <li class="information__item-image visually-hidden">
+            <li class="information__item-image information__item-image--close">
               <img src="img/main/iphone-screen-1.png" width="136" height="245" alt="Телефон с картинкой на заставке «Всем привет!».">
             </li>
-            <li class="information__item-image visually-hidden">
+            <li class="information__item-image information__item-image--close">
               <img src="img/main/iphone-screen-2.png" width="136" height="245" alt="Телефон с картинкой на заставке «Всем привет!».">
             </li>
             <li class="information__item-image">
@@ -129,24 +127,47 @@
           </ul>
         </div>
       </section>
+      <section class="research">
+        <div class="research__wrapper">
+          <img class="research__icon" src="img/main/timer-tablet.png" width="238" height="276" alt="Таймер на 24 часа.">
+          <div class="research__iner">
+            <h2 class="research__title">Эффект<br>на 24 часа!</h2>
+            <p class="research__text">
+              Британские ученые провели исследования<br>и доказали, что положительный эффект<br>от использования приложения длится<br>целые сутки!
+            </p>
+            <a class="research__link" href="#">
+              Узнать больше об исследовании
+            </a>
+          </div>
+        </div>
+      </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы о нас.</h2>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name">Николай Петров</cite>
+              <div class="reviews__about-autor">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__personal-data">25 лет, водитель трамвая</p>
+              </div>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name">Николай Петров</cite>
+            <blockquote class="reviews__item slider__item visually-hidden">
+              <div class="reviews__about-autor">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__personal-data">25 лет, водитель трамвая</p>
+              </div>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name">Николай Петров</cite>
+            <blockquote class="reviews__item slider__item visually-hidden">
+              <div class="reviews__about-autor">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__personal-data">25 лет, водитель трамвая</p>
+              </div>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
@@ -162,16 +183,27 @@
       <section class="price">
         <div class="price__wrapper carousel">
           <h2 class="visually-hidden">Цена.</h2>
-          <ul class="price__list carousel__list">
+          <ol class="price__list carousel__list">
+            <li class="price__item price__item--close">
+              <dl class="price__inner">
+                <dt></dt>
+                <dd class="price__function">Розовый фильтр</dd>
+                <dd class="price__function">Смайлики</dd>
+                <dd class="price__function">Комментарии</dd>
+              </dl>
+            </li>
             <li class="price__item carousel__item">
               <dl class="price__inner">
                 <dt class="price__title">
                   <p class="price__title-name">База</p>
                   <p class="price__title-value">1,99 USD</p>
                 </dt>
-                <dd class="price__function">Розовый фильтр</dd>
-                <dd class="price__function">Смайлики</dd>
-                <dd class="price__function">Комментарии</dd>
+                <dd class="price__function price__function--close">Розовый фильтр</dd>
+                <dd class="price__function price__function--close">Смайлики</dd>
+                <dd class="price__function price__function--close">Комментарии</dd>
+                <dd class="price__function price__function--open"></dd>
+                <dd class="price__function price__function--open"></dd>
+                <dd class="price__function price__function--open"></dd>
               </dl>
             </li>
             <li class="price__item carousel__item">
@@ -180,9 +212,12 @@
                   <p class="price__title-name">Стандарт</p>
                   <p class="price__title-value">3,99 USD</p>
                 </dt>
-                <dd class="price__function">Розовый фильтр</dd>
-                <dd class="price__function">Смайлики</dd>
-                <dd class="price__function">Комментарии</dd>
+                <dd class="price__function price__function--close">Розовый фильтр</dd>
+                <dd class="price__function price__function--close">Смайлики</dd>
+                <dd class="price__function price__function--close">Комментарии</dd>
+                <dd class="price__function price__function--open"></dd>
+                <dd class="price__function price__function--open"></dd>
+                <dd class="price__function price__function--open"></dd>
               </dl>
             </li>
             <li class="price__item carousel__item">
@@ -191,12 +226,15 @@
                   <p class="price__title-name">Анлим</p>
                   <p class="price__title-value">9,99 USD</p>
                 </dt>
-                <dd class="price__function">Розовый фильтр</dd>
-                <dd class="price__function">Смайлики</dd>
-                <dd class="price__function">Комментарии</dd>
+                <dd class="price__function price__function--close">Розовый фильтр</dd>
+                <dd class="price__function price__function--close">Смайлики</dd>
+                <dd class="price__function price__function--close">Комментарии</dd>
+                <dd class="price__function price__function--open"></dd>
+                <dd class="price__function price__function--open"></dd>
+                <dd class="price__function price__function--open"></dd>
               </dl>
             </li>
-          </ul>
+          </ol>
           <p class="price__toggles carousel__toggles">
             <button class="carousel__toggle" type="button">1</button>
             <button class="carousel__toggle carousel__toggle--current" type="button">2</button>
@@ -208,18 +246,20 @@
     <footer class="main-footer">
       <address class="main-footer__contacts contacts">
         <strong class="contacts__questions">Остались вопросы?<br>Свяжитесь с нами!</strong>
-        <p class="contacts__text">
-          Звоните:<br>
-          <a class="contacts__data" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </p>
-        <p class="contacts__text">
-          Пишите:<br>
-          <a class="contacts__data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <p class="contacts__text">
-          Приезжайте в гости:<br>
-          <a class="contacts__data" href="https://yandex.by/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.324184%2C59.934865&z=15.1">ул. Большая<br>Конюшенная, 19/8</a>
-        </p>
+        <div class="main-footer__iner">
+          <p class="contacts__text">
+            Звоните:<br>
+            <a class="contacts__data" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </p>
+          <p class="contacts__text">
+            Пишите:<br>
+            <a class="contacts__data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="contacts__text contacts__text--center">
+            Приезжайте в гости:<br>
+            <a class="contacts__data" href="https://yandex.by/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.324184%2C59.934865&z=15.1">ул. Большая<br>Конюшенная, 19/8</a>
+          </p>
+        </div>
         <img src="img/footer/map.png" width="320" height="200" alt="Адрес на карте.">
       </address>
       <div class="main-footer__wrapper">

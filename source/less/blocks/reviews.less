@@ -11,7 +11,19 @@
 }
 
 .reviews__item {
+  display: flex;
+  flex-direction: column;
   margin: 0;
+}
+
+.reviews__about-autor {
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .reviews__author-name {
@@ -21,6 +33,21 @@
   font-weight: 700;
   line-height: 30px;
   color: #000000;
+}
+
+.reviews__personal-data {
+  display: none;
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .reviews__text {

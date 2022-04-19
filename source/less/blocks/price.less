@@ -9,6 +9,9 @@
 }
 
 .price__list {
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  grid-gap: 2px;
   margin: 0;
   padding: 0;
 }
@@ -18,7 +21,22 @@
 }
 
 .price__inner {
+  display: grid;
+  grid-template-rows: 75px 45px 45px 45px;
+  grid-gap: 2px;
   margin: 0;
+}
+
+.price__item--close {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .price__title {
@@ -50,6 +68,30 @@
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 1px 0 0 0;
+}
+
+.price__function--open {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    background-image: url("/img/main/check-mark.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+.price__function--close {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .price__toggles {

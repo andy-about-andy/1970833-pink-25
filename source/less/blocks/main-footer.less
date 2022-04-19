@@ -6,6 +6,18 @@
   margin-top: 47px;
 }
 
+.main-footer__iner {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
 .main-footer__link-logo {
   text-decoration: none;
 }
@@ -16,4 +28,12 @@
 
 .main-footer__wrapper {
   padding: 40px 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
