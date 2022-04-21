@@ -5,13 +5,39 @@
 
 .main-nav__toggle {
   margin: 21px 20px;
+
+  @media (min-width: @tablet-width) {
+
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .main-nav__wrapper {
   // display: none;
+
+  @media (min-width: @tablet-width) {
+
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 620px;
+  }
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 130px;
+  }
 }

@@ -1,16 +1,56 @@
 .download-app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
 
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+.download-app__heading {
+  margin: 0;
+  padding-bottom: 34px;
+  color: #ffffff;
+  align-items: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  z-index: 1;
 }
 
 .download-app__wrapper-image {
+  width: 320px;
+  height: 286px;
+  background-size: 134%;
+  background-position: -70px;
+  background-repeat: no-repeat;
+  background-image: url("/img/header/phone-hand-desktop.png");
 
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    width: 500px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .download-app__wrapper {
   padding-top: 28px;
+  z-index: 1;
 }
 
 .download-app__list {
+  display: flex;
   margin: 0;
   padding: 0;
 }
