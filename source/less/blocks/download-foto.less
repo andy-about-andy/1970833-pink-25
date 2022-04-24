@@ -1,4 +1,6 @@
 .download-foto {
+  display: flex;
+  flex-direction: column;
   background-color: #f2f2f2;
 }
 
@@ -10,22 +12,57 @@
   background-color: #ffffff;
 }
 
+.download-foto__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
 .download-foto__image {
   display: block;
   margin: 0 auto;
   padding: 20px 0 23px;
 }
 
+.download-foto__inner {
+
+}
+
+.download-foto__container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
 .download-foto__list {
   display: flex;
   margin: 0 0 39px;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .download-foto__post {
   display: flex;
   flex-direction: column;
   padding: 39px 0 41px;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .download-foto__send {

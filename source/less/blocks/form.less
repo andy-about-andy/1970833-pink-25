@@ -1,19 +1,93 @@
 .form {
+  display: flex;
+  flex-direction: column;
 
+  @media (min-width: @tablet-width) {
+
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
 }
 
 .form__wrapper {
   margin: 44px 0;
 }
 
+.form__wrapper--full-name-tablet {
+  order: -5;
+}
+
 .form__group {
   margin: 0;
   padding: 0;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
-.form__group--backgound {
+.form__group--background {
   background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+  }
+}
+
+.form__group--app-tablet {
+  @media (min-width: @tablet-width) {
+    order: -3;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+.form__group--border {
+  @media (min-width: @tablet-width) {
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+  }
+}
+
+.form__group--position {
+  margin: 42px 0 44px;
+
+  @media (min-width: @tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__group--information {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column-reverse;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+.form__group--desktop {
+  grid-column: 1 / -1;
 }
 
 .form__text {
@@ -44,10 +118,28 @@
   border: none;
 }
 
+.form__title--information {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
 .form__list {
   margin: 44px 0;
   padding: 0;
+}
 
+.form__list--desktop {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .form__item {
@@ -64,6 +156,24 @@
 
 .form__control-label {
   line-height: 30px;
+}
+
+.form__button {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+.form__button--desktop {
+  grid-column: 1 / -1;
 }
 
 .form__send {

@@ -166,44 +166,50 @@
       </section>
       <section class="download-foto">
         <h2 class="download-foto__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</h2>
-        <img class="download-foto__image" src="img/catalog/photo-7-mobile.jpg" width="280" height="374" alt="Заснеженная дорого в лесу.">
-        <ul class="download-foto__list button-icon">
-          <li class="button-icon__item">
-            <button class="button-icon__button" type="button" name="Обрезка">
-              <svg class="button-icon__crop" aria-hidden="true" focusable="false" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z" fill="#d22856"/>
-              </svg>
-            </button>
-          </li>
-          <li class="button-icon__item">
-            <button class="button-icon__button" type="button" name="Заливка">
-              <svg class="button-icon__fill" aria-hidden="true" focusable="false" width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645">
-                <path d="M33.12 17.88 15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24ZM10.41 20 20 10.42 29.59 20H10.41ZM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7ZM48 40H0v3h48v-3Z"/></g>
-              </svg>
-            </button>
-          </li>
-          <li class="button-icon__item">
-            <button class="button-icon__button" type="button" name="Контрастность">
-              <svg class="button-icon__contrast" aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645">
-                <path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24Zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32Z"/><path d="M16 24.29a8.52 8.52 0 0 0 0-17"/></g>
-              </svg>
-            </button>
-          </li>
-        </ul>
-        <ul class="download-foto__list slider-foto">
-          <li class="slider-foto__item">
-            <input class="slider-foto__slider" type="range" id="crop" name="crop" min="0" max="50">
-          </li>
-          <li class="slider-foto__item">
-            <input class="slider-foto__slider" type="range" id="fill" name="fill" min="0" max="50">
-          </li>
-          <li class="slider-foto__item">
-            <input class="slider-foto__slider" type="range" id="contrast" name="contrast" min="0" max="50">
-          </li>
-        </ul>
-        <div class="download-foto__post">
-          <button class="download-foto__send" type="submit">Запостить</button>
-          <button class="download-foto__cancel" type="button">Отмена</button>
+        <div class="download-foto__wrapper">
+          <img class="download-foto__image" src="img/catalog/photo-7-mobile.jpg" width="280" height="374" alt="Заснеженная дорого в лесу.">
+          <div class="download-foto__inner">
+            <div class="download-foto__container">
+              <ul class="download-foto__list button-icon">
+                <li class="button-icon__item">
+                  <button class="button-icon__button" type="button" name="Обрезка">
+                    <svg class="button-icon__crop" aria-hidden="true" focusable="false" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z" fill="#d22856"/>
+                    </svg>
+                  </button>
+                </li>
+                <li class="button-icon__item">
+                  <button class="button-icon__button" type="button" name="Заливка">
+                    <svg class="button-icon__fill" aria-hidden="true" focusable="false" width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645">
+                      <path d="M33.12 17.88 15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24ZM10.41 20 20 10.42 29.59 20H10.41ZM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7ZM48 40H0v3h48v-3Z"/></g>
+                    </svg>
+                  </button>
+                </li>
+                <li class="button-icon__item">
+                  <button class="button-icon__button" type="button" name="Контрастность">
+                    <svg class="button-icon__contrast" aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645">
+                      <path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24Zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32Z"/><path d="M16 24.29a8.52 8.52 0 0 0 0-17"/></g>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+              <ul class="download-foto__list slider-foto">
+                <li class="slider-foto__item">
+                  <input class="slider-foto__slider" type="range" id="crop" name="crop" min="0" max="50">
+                </li>
+                <li class="slider-foto__item">
+                  <input class="slider-foto__slider" type="range" id="fill" name="fill" min="0" max="50">
+                </li>
+                <li class="slider-foto__item">
+                  <input class="slider-foto__slider" type="range" id="contrast" name="contrast" min="0" max="50">
+                </li>
+              </ul>
+            </div>
+            <div class="download-foto__post">
+              <button class="download-foto__send" type="submit">Запостить</button>
+              <button class="download-foto__cancel" type="button">Отмена</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
