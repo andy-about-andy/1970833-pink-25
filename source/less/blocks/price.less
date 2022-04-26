@@ -1,7 +1,14 @@
 .price {
-  padding-top: 127px;
-  padding-bottom: 49px;
+  padding: 127px 20px 49px 20px;
   background: linear-gradient(175deg, rgba(255, 255, 255, 1) 8%, rgba(242, 242, 242, 1) 8%);
+
+  @media (min-width: @tablet-width) {
+
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 127px 65px 49px 65px;
+  }
 }
 
 .price__wrapper {
