@@ -1,4 +1,5 @@
 .form {
+  min-width: 320px;
   display: flex;
   flex-direction: column;
 
@@ -9,12 +10,11 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
   }
 }
 
 .form__wrapper {
-  margin: 44px 0;
+  margin: 44px auto;
 }
 
 .form__wrapper--full-name-tablet {
@@ -22,6 +22,7 @@
 }
 
 .form__group {
+  min-width: 320px;
   margin: 0;
   padding: 0;
   border: none;
@@ -61,9 +62,8 @@
 }
 
 .form__group--position {
-  margin: 42px 0 44px;
-
   @media (min-width: @tablet-width) {
+    margin: 42px 0 44px;
     order: -1;
   }
 
@@ -131,8 +131,17 @@
 }
 
 .form__list {
-  margin: 44px 0;
+  width: 280px;
+  margin: 44px auto;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
+  }
 }
 
 .form__list--desktop {
@@ -159,6 +168,7 @@
 }
 
 .form__button {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 

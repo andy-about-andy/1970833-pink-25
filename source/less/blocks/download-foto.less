@@ -1,7 +1,12 @@
 .download-foto {
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    min-width: 660px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 940px;
@@ -20,15 +25,18 @@
 }
 
 .download-foto__wrapper {
+  width: 280px;
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
+    width: 620px;
     flex-direction: row;
   }
 
   @media (min-width: @desktop-width) {
-
+    width: 940px;
   }
 }
 
