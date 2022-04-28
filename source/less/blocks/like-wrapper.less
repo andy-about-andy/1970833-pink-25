@@ -1,6 +1,31 @@
 .like-wrapper {
-  padding: 26px 0;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 0 10px 25px 17px;
+  box-sizing: border-box;
   background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    padding: 0 24px 25px 30px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+.like-wrapper--tablet {
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
 }
 
 .like-wrapper__author {
@@ -20,7 +45,7 @@
 }
 
 .like-wrapper__desc {
-  margin: 14px 0 23px;
+  margin: 0 0 23px;
 }
 
 .like-wrapper__text {

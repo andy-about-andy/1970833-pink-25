@@ -57,7 +57,7 @@
       <section class="main-form">
         <h2 class="main-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="form__wrapper">
+          <div class="form__wrapper form__wrapper--full-name-tablet">
             <p class="form__group">
               <label class="form__text" for="surname">Фамилия:</label>
               <input class="form__field" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
@@ -71,9 +71,9 @@
               <input class="form__field" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
             </p>
           </div>
-          <fieldset class="form__group form__group--backgound">
+          <fieldset class="form__group form__group--background form__group--border form__group--desktop">
             <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="form__list">
+            <ul class="form__list form__list--desktop">
               <li class="form__item">
                 <input class="visually-hidden form__control-input" type="checkbox" name="сделал селфи с акулой" checked>
                 <span class="form__control-mark"></span>
@@ -106,17 +106,18 @@
               </li>
             </ul>
           </fieldset>
-          <div class="form__wrapper">
-            <p class="form__group">
+          <fieldset class="form__group form__group--position form__group--border form__group--desktop">
+            <legend class="form__title form__title--information">Контактная информация</legend>
+            <p class="form__group form__group--information">
               <label class="form__text" for="number-phone">Номер телефона:</label>
               <input class="form__field" type="number" id="number-phone" name="number-phone" placeholder="Номер, пожалуйста">
             </p>
-            <p class="form__group">
+            <p class="form__group form__group--information">
               <label class="form__text" for="e-mail">Адрес почты:</label>
               <input class="form__field" type="email" id="e-mail" name="e-mail" placeholder="Введите почту *" required>
             </p>
-          </div>
-          <fieldset class="form__group form__group--backgound">
+          </fieldset>
+          <fieldset class="form__group form__group--background form__group--app-tablet form__group--border">
             <legend class="form__title">С каким приложением путешествовали?</legend>
             <ul class="form__list">
               <li class="form__item">
@@ -136,14 +137,14 @@
               </li>
             </ul>
           </fieldset>
-          <div class="form__wrapper">
-            <p class="form__group">
-              <label class="form__text" for="text-emotions">Опишите свои эмоции</label>
-              <input class="form__field" type="text" id="text-emotions" name="text-emotions" placeholder="Можно прям в красках, не стесняясь в выражениях">
-            </p>
+          <fieldset class="form__group form__group--border form__group--desktop">
+            <legend class="form__title">Опишите свои эмоции</legend>
+              <input class="form__field" type="text" name="text-emotions" placeholder="Можно прям в красках, не стесняясь в выражениях">
+          </fieldset>
+          <div class="form__button form__button--desktop">
+            <button class="form__send" type="submit">Отправить форму</button>
+            <p class="form__note">* — обязательные поля</p>
           </div>
-          <button class="form__send" type="submit">Отправить форму</button>
-          <p class="form__note">* — обязательные поля</p>
         </form>
       </section>
     </main>

@@ -1,12 +1,23 @@
 .catalog {
-
+  margin: 0 auto;
 }
 
 .catalog__title {
-  margin: 54px 0 60px 0;
+  width: 280px;
+  margin: 54px auto 60px auto;
+  padding: 0 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
 }
 
 .catalog__foto-day {
@@ -14,10 +25,32 @@
 }
 
 .catalog__list {
-  margin: 0;
-  padding: 0;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    padding: 0 65px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .catalog__item {
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    width: 300px
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
