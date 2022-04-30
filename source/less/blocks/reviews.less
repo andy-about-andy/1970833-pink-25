@@ -14,7 +14,12 @@
 }
 
 .reviews__wrapper {
-
+  @media (min-width: @desktop-width) {
+    padding-top: 162px;
+    background-image: url("/img/main/quotation-marks.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+  }
 }
 
 .reviews__list {
@@ -31,10 +36,6 @@
   @media (min-width: @tablet-width) {
     order: 2;
   }
-
-  @media (min-width: @desktop-width) {
-
-  }
 }
 
 .reviews__author-name {
@@ -44,6 +45,14 @@
   font-weight: 700;
   line-height: 30px;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .reviews__personal-data {
@@ -54,10 +63,11 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    margin-bottom: 49px;
   }
 
   @media (min-width: @desktop-width) {
-
+    font-size: 18px;
   }
 }
 
@@ -66,11 +76,17 @@
   margin-top: 31px;
   font-size: 14px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 690px;
+    padding-left: 126px;
+  }
 }
 
 .reviews__toggles {
-  display: flex;
-  justify-content: center;
-  margin: 0;
   margin-top: 44px;
 }

@@ -35,23 +35,43 @@
 
 .main-footer__link-logo {
   display: block;
+  width: 146px;
+  margin: 0 67px 38px 67px;
   text-decoration: none;
+
+  &:hover .main-footer__logo-name {
+    fill: @pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
-.main-footer__logo {
+.main-footer__logo-glasses {
+  fill: @pink;
+}
 
+.main-footer__logo-name {
+  padding-left: 8px;
+  fill: @darkblue;
 }
 
 .main-footer__wrapper {
   width: 280px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 40px 0;
 
   @media (min-width: @tablet-width) {
     width: 620px;
     padding: 40px 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
