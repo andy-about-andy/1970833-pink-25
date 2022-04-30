@@ -1,9 +1,28 @@
-.copyright {
+.copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  margin: 0 auto;
+  text-decoration: none;
 
+  &:hover .footer-copyright-icon {
+    fill: @darkblue;
+  }
+
+  &:active .footer-copyright-icon {
+    fill: fade(@darkblue, 30%);
+  }
 }
 
 .copyright__text {
+  margin-right: 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  color: @darkblue;
+}
+
+.footer-copyright-icon {
+  fill: @pink;
 }
