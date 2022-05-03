@@ -1,3 +1,35 @@
 .panorama-day {
+  position: relative;
 
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 140px;
+    height: 36px;
+    background-color: @pink;
+    z-index: 3;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+    display: block;
+
+    @media (min-width: @tablet-width) {
+      top: 57px;
+      left: 65%;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 54px;
+      left: 75%;
+    }
+  }
+}
+
+.panorama-day__image {
+  display: block;
+  width: 100%;
 }

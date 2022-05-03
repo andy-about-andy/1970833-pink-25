@@ -1,11 +1,27 @@
 .slider-foto {
+  @media (min-width: @tablet-width) {
+    margin-top: 19px;
+    justify-content: start;
+  }
 
+  @media (min-width: @desktop-width) {
+    margin-bottom: 108px;
+    padding-left: 46px;
+  }
 }
 
 .slider-foto__item {
   list-style-type: none;
 }
 
-.slider-foto__slider {
-  margin: 0;
+.slider-foto__item--close {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }

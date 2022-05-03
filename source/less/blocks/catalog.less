@@ -12,11 +12,22 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    width: 620px;
+    width: 570px;
+    margin: 100px auto 85px auto;
+    font-size: 18px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 940px;
+    margin-bottom: 97px;
+
+    br {
+      display: inline;
+    }
   }
 }
 
@@ -47,10 +58,15 @@
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
-    width: 300px
+    width: 300px;
   }
 
   @media (min-width: @desktop-width) {
 
   }
+}
+
+.catalog__item-image {
+  display: block;
+  width: 100%;
 }
