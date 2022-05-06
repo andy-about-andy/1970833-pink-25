@@ -16,12 +16,22 @@
 
 .download-foto__title {
   margin: 0;
-  padding: 49px 0 52px 0;
+  padding: 29px 0 52px 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    br:last-child {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .download-foto__wrapper {
@@ -43,23 +53,44 @@
 .download-foto__image {
   display: block;
   margin: 0 auto;
-  padding: 20px 0 23px;
+  padding: 20px 0 42px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 400px;
+    margin: 57px 51px 54px 20px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 57px 96px 57px 80px;
+  }
 }
 
 .download-foto__inner {
-  padding: 0 20px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 275px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .download-foto__container {
   @media (min-width: @tablet-width) {
     display: flex;
+    margin-top: 57px;
   }
 }
 
 .download-foto__list {
   display: flex;
-  margin: 0 0 39px;
-  padding: 0;
+  justify-content: space-between;
+  margin: 0 0 34px;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
@@ -75,12 +106,19 @@
   flex-direction: column;
   padding: 39px 0 41px;
 
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
   @media (min-width: @desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
+    width: 410px;
   }
 }
 
 .download-foto__send {
+  height: 55px;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 18px;
@@ -89,9 +127,28 @@
   border: 3px solid @pink;
   box-sizing: border-box;
   border-radius: 30px;
+  cursor: pointer;
+
+  &:hover {
+    color: #ffffff;
+    background-color: @pink;
+  }
+
+  &:disabled {
+    color: fade(#ffffff, 30%);
+    background-color: @pink;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .download-foto__cancel {
+  height: 55px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -100,4 +157,21 @@
   border: 3px solid @darkblue;
   box-sizing: border-box;
   border-radius: 30px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    background-color: @darkblue;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+  }
 }
