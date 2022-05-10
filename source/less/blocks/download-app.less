@@ -1,4 +1,5 @@
 .download-app {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -16,7 +17,7 @@
 
 .download-app__heading {
   margin: 0;
-  padding-bottom: 34px;
+  padding-bottom: 30px;
   color: #ffffff;
   align-items: center;
   font-weight: 300;
@@ -38,21 +39,35 @@
 }
 
 .download-app__wrapper-image {
-  position: relative;
-  left: 0;
-  bottom: -3px;
   width: 320px;
   height: 286px;
-  background-image: url("/img/header/phone-hand-phone.png");
-  background-size: 95%;
+  background-image: url("/img/header/phone-hand-mobile.png");
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/header/phone-hand-mobile@2x.png");
+  }
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 30%;
-    left: 50%;
+    bottom: -14px;
+    left: 54%;
     z-index: 0;
-    transform: scale(1.6);
+    transform: scale(2.05);
+    background-image: url("/img/header/phone-hand-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/header/phone-hand-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: -103px;
+    left: 104%;
+    transform: scale(3.15);
+    background-image: url("/img/header/phone-hand-desktop.png");
   }
 }
 
