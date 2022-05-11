@@ -20,11 +20,20 @@
   line-height: 30px;
   text-align: center;
 
+  & q {
+    display: none;
+    quotes: none;
+  }
+
   @media (min-width: @tablet-width) {
     width: 490px;
     margin-top: 85px;
     margin-bottom: 82px;
     font-size: 18px;
+
+    & q {
+      display: inline;
+    }
   }
 
   @media (min-width: @desktop-width) {

@@ -42,6 +42,10 @@
 
 .main-header--catalog {
   background-size: cover;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .main-header__wrapper {
@@ -77,6 +81,7 @@
   &:hover .main-header__logo-glasses,
   &:hover .main-header__logo-name {
     fill: @pink;
+    color: #ffffff;
   }
 
   &:active .main-header__logo-glasses,
@@ -96,10 +101,6 @@
     width: 145px;
     margin: 27px 65px;
     margin-right: 173px;
-
-    &:hover .main-header__stars {
-      fill: #ffffff;
-    }
   }
 }
 
@@ -134,11 +135,6 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-  }
-}
-
-.main-header__stars {
-  @media (min-width: @desktop-width) {
-    fill: @pink;
+    color: @pink;
   }
 }
