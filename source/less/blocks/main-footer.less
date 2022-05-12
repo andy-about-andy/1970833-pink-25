@@ -17,13 +17,14 @@
 
 .main-footer__iner {
   width: 280px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     width: 620px;
+    margin-bottom: 26px;
   }
 
   @media (min-width: @desktop-width) {
@@ -44,18 +45,23 @@
     fill: @pink;
   }
 
-  &:active {
+  &:hover .main-footer__logo-name-desktop {
+    color: @darkblue;
+  }
+
+  &:active .main-footer__logo-glasses {
+    fill: @pink;
     opacity: 0.3;
+  }
+
+  &:active .main-footer__logo-name {
+    fill: @darkblue;
+    opacity: 0.3;
+    color: @pink;
   }
 
   @media (min-width: @tablet-width) {
     margin: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    &:hover .main-footer__name-stars {
-      fill: @darkblue;
-    }
   }
 }
 
@@ -95,22 +101,20 @@
   }
 }
 
-.main-footer__logo-desktop {
+.main-footer__logo-glasses-desktop {
   display: none;
 
   @media (min-width: @desktop-width) {
     display: block;
+    color: @darkblue;
   }
 }
 
-.main-footer__glasses-stars {
-  @media (min-width: @desktop-width) {
-    fill: @darkblue;
-  }
-}
+.main-footer__logo-name-desktop {
+  display: none;
 
-.main-footer__name-stars {
   @media (min-width: @desktop-width) {
-    fill: @pink;
+    display: block;
+    color: @pink;
   }
 }
