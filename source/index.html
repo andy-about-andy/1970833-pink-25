@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -70,17 +70,23 @@
             <ul class="download-app__list">
               <li class="download-app__item">
                 <a class="download-app__link download-app__link--ladel" href="https://www.apple.com/ru/app-store/">
-                  <img src="img/download/apple-logo.svg" width="47" height="56" alt="Логотип Iphone.">
+                  <svg aria-hidden="true" focusable="false" width="47" height="56">
+                    <use href="img/sprite-download.svg#apple-logo"></use>
+                  </svg>
                 </a>
               </li>
               <li class="download-app__item">
                 <a class="download-app__link download-app__link--ladel" href="https://play.google.com/store?hl=ru&gl=US">
-                  <img src="img/download/android-logo.svg" width="43" height="47" alt="Логотип Android.">
+                  <svg aria-hidden="true" focusable="false" width="43" height="47">
+                    <use href="img/sprite-download.svg#android-logo"></use>
+                  </svg>
                 </a>
               </li>
               <li class="download-app__item">
                 <a class="download-app__link download-app__link--ladel" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone?icid=CNavAppsWindowsPhoneApps">
-                  <img src="img/download/microsoft-logo.svg" width="44" height="41" alt="Логотип Windows.">
+                  <svg aria-hidden="true" focusable="false" width="44" height="41">
+                    <use href="img/sprite-download.svg#microsoft-logo"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
