@@ -1,0 +1,141 @@
+.modal-container {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-container--close {
+  display: none;
+}
+
+.modal-container__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 320px;
+  min-height: 289px;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 5px;
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    min-height: 363px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+    min-height: 377px;
+  }
+}
+
+.modal-container__failure {
+
+}
+
+.modal-container__failure--close {
+  display: none;
+}
+
+.modal-container__success {
+  @media (min-width: @tablet-width) {
+    br {
+      display: none;
+    }
+  }
+}
+
+.modal-container__success--close {
+  display: none;
+}
+
+.modal-container__title {
+  font-size: 18px;
+  text-align: center;
+  margin: 44px auto 37px;
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+    margin-top: 49px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 396px;
+  }
+}
+
+.modal-container__text {
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 20px 48px;
+
+  @media (min-width: @tablet-width) {
+    width: 320px;
+    padding: 0 0 40px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 378px;
+  }
+}
+
+.modal-container__text--success {
+  padding: 0 27px 41px;
+}
+
+.modal-container__butoon-wrap {
+  background-color: #f2f2f2;
+}
+
+.modal-container__butoon-wrap--failure {
+  background-color: #ffffff;
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+  }
+}
+
+.modal-container__butoon {
+  display: block;
+  width: 276px;
+  min-height: 59px;
+  margin: 50px auto;
+  padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+  background: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: fade(#ffffff, 30%);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 296px;
+    margin-bottom: 52px;
+  }
+}
+
+.modal-container__butoon--failure {
+  margin-top: 0;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 50px;
+  }
+}

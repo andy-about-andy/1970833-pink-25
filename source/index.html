@@ -4,11 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Сайт фотоприложения «Пинк»</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -131,16 +134,16 @@
           </ul>
           <ul class="information__list-image">
             <li class="information__item-image information__item-image--close">
-                <img class="information__image" src="img/main/iphone-screen-desktop-1.png" width="186" height="382" srcset="img/main/iphone-screen-desktop-1@2x.png 2x" alt="Телефон с картинкой на заставке «Всем привет!».">
+                <img class="information__image" loading="lazy" src="img/main/iphone-screen-desktop-1.png" width="186" height="382" srcset="img/main/iphone-screen-desktop-1@2x.png 2x" alt="Телефон с картинкой на заставке «Всем привет!».">
             </li>
             <li class="information__item-image information__item-image--close">
-              <img class="information__image" src="img/main/iphone-screen-desktop-2.png" width="186" height="382" srcset="img/main/iphone-screen-desktop-2@2x.png 2x" alt="Телефон с картинкой на заставке «Всем привет!».">
+              <img class="information__image" loading="lazy" src="img/main/iphone-screen-desktop-2.png" width="186" height="382" srcset="img/main/iphone-screen-desktop-2@2x.png 2x" alt="Телефон с картинкой на заставке «Всем привет!».">
             </li>
             <li class="information__item-image">
               <picture>
                 <source media="(min-width: 1070px)" width="186" height="382" srcset="img/main/iphone-screen-desktop-3.png 1x, img/main/iphone-screen-desktop-3@2x.png 2x">
                 <source media="(min-width: 660px)" width="268" height="547" srcset="img/main/iphone-screen-tablet-3.png 1x, img/main/iphone-screen-tablet-3@2x.png 2x">
-                <img class="information__image" src="img/main/iphone-screen-mobile-3.png" width="157" height="320" srcset="img/main/iphone-screen-mobile-3@2x.png 2x" alt="Телефон с картинкой на заставке «Всем привет!».">
+                <img class="information__image" loading="lazy" src="img/main/iphone-screen-mobile-3.png" width="157" height="320" srcset="img/main/iphone-screen-mobile-3@2x.png 2x" alt="Телефон с картинкой на заставке «Всем привет!».">
               </picture>
             </li>
           </ul>
@@ -319,7 +322,7 @@
           </p>
         </address>
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.32085871559023!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1651260688372!5m2!1sru!2sby"
+          <iframe title="Карта с местом расположения HTMLAcademy." src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.32085871559023!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1651260688372!5m2!1sru!2sby"
           width="320" height="200" style="border: 0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
         </div>
