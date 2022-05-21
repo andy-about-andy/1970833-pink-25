@@ -68,7 +68,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="download-app__item">
+              <li class="download-app__item download-app__item--android">
                 <a class="download-app__link download-app__link--ladel" href="https://play.google.com/store?hl=ru&gl=US">
                   <svg aria-hidden="true" focusable="false" width="43" height="47">
                     <use href="img/sprite-download.svg#android-logo"></use>
@@ -112,13 +112,22 @@
           </ul>
           <ul class="information__list-image">
             <li class="information__item-image information__item-image--close">
+              <picture>
+                <source width="186" height="382" type="image/webp" srcset="img/main/iphone-screen-desktop-1.webp 1x, iphone-screen-desktop-1@2x.webp 2x">
                 <img class="information__image" loading="lazy" src="img/main/iphone-screen-desktop-1.png" width="186" height="382" srcset="img/main/iphone-screen-desktop-1@2x.png 2x" alt="Телефон с картинкой на заставке «Всем привет!».">
+              </picture>
             </li>
             <li class="information__item-image information__item-image--close">
-              <img class="information__image" loading="lazy" src="img/main/iphone-screen-desktop-2.png" width="186" height="382" srcset="img/main/iphone-screen-desktop-2@2x.png 2x" alt="Телефон с картинкой на заставке «Всем привет!».">
+              <picture>
+                <source width="186" height="382" type="image/webp" srcset="img/main/iphone-screen-desktop-2.webp 1x, iphone-screen-desktop-2@2x.webp 2x">
+                <img class="information__image" loading="lazy" src="img/main/iphone-screen-desktop-2.png" width="186" height="382" srcset="img/main/iphone-screen-desktop-2@2x.png 2x" alt="Телефон с картинкой на заставке «Всем привет!».">
+              </picture>
             </li>
             <li class="information__item-image">
               <picture>
+                <source width="186" height="382" media="(min-width: 1070px)" type="image/webp" srcset="img/main/iphone-screen-desktop-3.webp 1x, img/main/iphone-screen-desktop-3@2x.webp 2x">
+                <source width="286" height="547" media="(min-width: 660px)" type="image/webp" srcset="img/main/iphone-screen-tablet-3.webp 1x, img/main/iphone-screen-tablet-3@2x.webp 2x">
+                <source width="157" height="320" type="image/webp" srcset="img/main/iphone-screen-mobile-3.webp 1x, img/main/iphone-screen-mobile-3@2x.webp 2x">
                 <source media="(min-width: 1070px)" width="186" height="382" srcset="img/main/iphone-screen-desktop-3.png 1x, img/main/iphone-screen-desktop-3@2x.png 2x">
                 <source media="(min-width: 660px)" width="268" height="547" srcset="img/main/iphone-screen-tablet-3.png 1x, img/main/iphone-screen-tablet-3@2x.png 2x">
                 <img class="information__image" loading="lazy" src="img/main/iphone-screen-mobile-3.png" width="157" height="320" srcset="img/main/iphone-screen-mobile-3@2x.png 2x" alt="Телефон с картинкой на заставке «Всем привет!».">
@@ -130,6 +139,8 @@
       <section class="research">
         <div class="research__wrapper">
           <picture>
+            <source width="298" height="345" media="(min-width: 1070px)" type="image/webp" srcset="img/main/timer-desktop.webp 1x, img/main/timer-desktop@2x.webp 2x">
+            <source width="238" height="276" type="image/webp" srcset="img/main/timer-tablet.webp 1x, img/main/timer-tablet@2x.webp 2x">
             <source media="(min-width: 1070px)" width="298" height="345" srcset="img/main/timer-desktop.png 1x, img/main/timer-desktop@2x.png 2x">
             <img src="img/main/timer-tablet.png" width="238" height="276" srcset="img/main/timer-tablet@2x.png 2x" alt="Таймер на 24 часа.">
           </picture>
@@ -276,8 +287,8 @@
       <div class="main-footer__contacts contacts">
         <strong class="contacts__questions">Остались вопросы?<br>Свяжитесь с нами!</strong>
         <address class="main-footer__iner">
-          <p class="contacts__text">Звоните:<br><a class="contacts__data" href="tel:+78125556666">+7 (812) 555-66-66</a></p>
-          <p class="contacts__text contacts__text--order-desktop">Пишите:<br><a class="contacts__data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+          <p class="contacts__text contacts__text--tablet-call">Звоните:<br><a class="contacts__data" href="tel:+78125556666">+7 (812) 555-66-66</a></p>
+          <p class="contacts__text contacts__text--order-desktop contacts__text--tablet-email">Пишите:<br><a class="contacts__data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
           <p class="contacts__text contacts__text--center">Приезжайте в гости:<br><a class="contacts__data" href="https://yandex.by/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.324184%2C59.934865&z=15.1">ул. Большая<br>Конюшенная, 19/8</a></p>
         </address>
         <div class="contacts__map">
