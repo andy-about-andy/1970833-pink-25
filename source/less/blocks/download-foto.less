@@ -1,7 +1,7 @@
 .download-foto {
-  min-width: 320px;
   display: flex;
   flex-direction: column;
+  min-width: 320px;
   background-color: #f2f2f2;
 
   @media (min-width: @tablet-width) {
@@ -16,7 +16,7 @@
 
 .download-foto__title {
   margin: 0;
-  padding: 29px 0 52px 0;
+  padding: 23px 0 43px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -24,26 +24,29 @@
   background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
+    padding: 63px 0 70px;
+    font-size: 18px;
+
     br:last-child {
       display: none;
     }
   }
 
   @media (min-width: @desktop-width) {
-    padding: 67px 0 75px;
+    padding: 58px 0 68px;
     font-size: 18px;
   }
 }
 
 .download-foto__wrapper {
-  width: 280px;
   display: flex;
-  margin: 0 auto;
   flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 620px;
     flex-direction: row;
+    width: 620px;
   }
 
   @media (min-width: @desktop-width) {
@@ -59,12 +62,12 @@
   @media (min-width: @tablet-width) {
     width: 300px;
     height: 400px;
-    margin: 57px 51px 54px 20px;
+    margin: 57px 51px 54px 0;
     padding: 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 57px 96px 57px 80px;
+    margin: 57px 88px 57px 80px;
   }
 }
 
@@ -81,6 +84,10 @@
     display: flex;
     margin-top: 57px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 55px;
+  }
 }
 
 .download-foto__list {
@@ -91,6 +98,8 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
+    padding: 0 28px;
+    margin-bottom: 29px;
   }
 }
 
@@ -100,6 +109,7 @@
   padding: 39px 0 41px;
 
   @media (min-width: @tablet-width) {
+    margin-right: 14px;
     padding: 0;
   }
 
@@ -113,6 +123,7 @@
 .download-foto__send {
   min-height: 55px;
   margin-bottom: 12px;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -132,6 +143,10 @@
     background-color: @pink;
   }
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 22px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 183px;
     margin: 0;
@@ -141,14 +156,15 @@
 
 .download-foto__cancel {
   min-height: 55px;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   color: @darkblue;
-  opacity: 0.1;
   border: 3px solid @darkblue;
   box-sizing: border-box;
   border-radius: 30px;
+  opacity: 0.1;
   cursor: pointer;
 
   &:hover {

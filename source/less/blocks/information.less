@@ -3,7 +3,7 @@
   min-width: 320px;
   margin: 0 auto;
   padding: 0;
-  padding-top: 46px;
+  padding-top: 40px;
 }
 
 .information__title {
@@ -11,13 +11,15 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
+    margin-top: 8px;
     margin-bottom: 33px;
     min-width: 588px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 940px;
-    padding-right: 65px;
+    margin: 0 auto;
+    margin-top: 22px;
     padding-bottom: 54px;
   }
 }
@@ -29,12 +31,6 @@
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-
-  @media (max-width: @mobile-width-only) {
-    br {
-      display: none;
-    }
-  }
 
   @media (min-width: @tablet-width) {
     padding-bottom: 0;
@@ -49,18 +45,18 @@
 }
 
 .information__wrapper {
-  padding-top: 87px;
   position: relative;
+  padding-top: 85px;
   background-color: #f2f2f2;
 
   &::before {
     content: "";
-    width: 100%;
-    height: 32px;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
+    width: 100%;
+    height: 32px;
     clip-path: polygon(0 100%, 0 0, 100% 0);
     background-color: #ffffff;
 
@@ -74,10 +70,10 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto;
-    padding-top: 0;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -87,33 +83,37 @@
 }
 
 .information__list {
-  width: 278px;
   position: relative;
   z-index: 2;
+  width: 278px;
   margin: 0 auto;
   padding: 0;
 
   @media (min-width: @tablet-width) {
     width: 310px;
     margin: 0;
-    margin-top: 80px;
+    margin-top: 72px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     width: 940px;
     margin: 0 auto;
-    margin-top: 59px;
+    margin-top: 55px;
   }
 }
 
 .information__item {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   list-style-type: none;
   text-align: center;
 
-  @media (min-width: @tablet-width) {
+  &:last-child {
     margin-bottom: 40px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 34px;
     text-align: left;
 
     &:last-child {
@@ -135,25 +135,18 @@
 
 .information__headline {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 11px;
   font-size: 18px;
   color: #000000;
 
-  @media (max-width: @mobile-width-only) {
-    br {
-      display: none;
-    }
-  }
-
   @media (min-width: @tablet-width) {
-    margin-bottom: 18px;
-
-    br {
-      display: none;
-    }
+    margin-bottom: 13px;
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 22px;
+    padding-left: 30px;
+    padding-right: 30px;
     font-size: 30px;
     line-height: 30px;
     text-align: center;
@@ -164,26 +157,12 @@
   margin: 0;
   font-size: 14px;
 
-  @media (max-width: @mobile-width-only) {
-    br {
-      display: none;
-    }
-  }
-
-  @media (min-width: @tablet-width) {
-    br {
-      display: none;
-    }
-  }
-
   @media (min-width: @desktop-width) {
+    padding-left: 30px;
+    padding-right: 30px;
     font-size: 18px;
     line-height: 30px;
     text-align: center;
-
-    br {
-      display: block;
-    }
   }
 }
 
@@ -195,7 +174,7 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    margin: 6px 42px 0 0;
+    margin: 0 42px 0 0;
     order: -1;
   }
 
@@ -203,14 +182,15 @@
     display: flex;
     width: 940px;
     margin: 0 auto;
+    padding-top: 4px;
   }
 }
 
 .information__item-image {
   position: relative;
   height: 277px;
-  overflow: hidden;
   margin: 0 auto;
+  overflow: hidden;
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
@@ -220,6 +200,11 @@
   @media (min-width: @desktop-width) {
     width: 300px;
     height: 301px;
+
+    &:nth-child(2) {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
 
     &::before {
       position: absolute;
@@ -245,6 +230,7 @@
 
 .information__image {
   @media (min-width: @desktop-width) {
-    margin-left: 54px;
+    display: block;
+    margin: 0 auto;
   }
 }

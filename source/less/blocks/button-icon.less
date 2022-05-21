@@ -4,8 +4,7 @@
   @media (min-width: @tablet-width) {
     justify-content: start;
     align-items: center;
-    padding: 0;
-    padding-top: 9px;
+    padding: 9px 0 0 2px;
   }
 
   @media (min-width: @desktop-width) {
@@ -21,15 +20,24 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+  }
+}
+
+.button-icon__item--contrast {
+  padding-top: 5px;
+  padding-right: 11px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
   }
 }
 
 .button-icon__button {
   padding: 0;
   border: none;
-  cursor: pointer;
   background: transparent;
+  cursor: pointer;
 }
 
 .button-icon__icon {
