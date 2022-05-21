@@ -1,8 +1,8 @@
 .like-wrapper {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 20px;
-  padding: 0 10px 25px 17px;
+  margin-bottom: 19px;
+  padding: 0 10px 19px 17px;
   box-sizing: border-box;
   background-color: #f2f2f2;
 
@@ -12,8 +12,12 @@
     justify-content: space-between;
     width: 300px;
     min-height: 155px;
-    padding: 0 24px 25px 30px;
     margin: 0;
+    padding: 0 24px 25px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 28px;
   }
 }
 
@@ -22,13 +26,14 @@
     position: relative;
     display: block;
     width: 620px;
-    height: 125px;
+    min-height: 120px;
     margin: 0 auto 50px;
-    padding-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
     width: 940px;
+    min-height: 96px;
+    padding-bottom: 0;
   }
 }
 
@@ -41,7 +46,11 @@
 }
 
 .like-wrapper__author {
-  padding-top: 23px;
+  padding-top: 16px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+  }
 }
 
 .like-wrapper__author-name {
@@ -50,7 +59,11 @@
 }
 
 .like-wrapper__author-foto {
-  padding-top: 18px;
+  padding-top: 16px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 22px;
+  }
 }
 
 .like-wrapper__time-ago {
@@ -61,14 +74,14 @@
 }
 
 .like-wrapper__desc {
-  margin: 0 0 18px;
+  margin: 0 0 11px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
   }
 }
 
-.like-wrapper__desc--teblet {
+.like-wrapper__desc--tablet {
   @media (min-width: @tablet-width) {
     margin: 0;
   }
@@ -76,6 +89,7 @@
 
 .like-wrapper__text {
   font-size: 14px;
+  line-height: 20px;
 
   @media (min-width: @tablet-width) {
     br {
@@ -91,35 +105,43 @@
   @media (min-width: @tablet-width) {
     flex-direction: row-reverse;
     justify-content: space-between;
+    padding-top: 11px;
+    margin-right: 5px;
   }
 }
 
 .like-wrapper__like--tablet {
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 22px;
-    right: 35px;
+    top: 25px;
+    right: 16px;
+    margin: 0;
+    padding: 0;
   }
 }
 
 .like-wrapper__button-heart {
   width: 13px;
   height: 12px;
-  padding: 0;
   align-self: center;
   border: none;
   background-image: url("/img/catalog/heart.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
   cursor: pointer;
 
   &:hover {
-    opacity: 0.6;
+    transform: scale(0.8);
   }
 
   &:active {
     opacity: 0.3;
   }
+}
+
+.like-wrapper__button-heart--tablet {
+  margin-right: 13px;
 }
 
 .like-wrapper__number-like {
@@ -130,6 +152,6 @@
 
   @media (min-width: @tablet-width) {
     margin-left: 0;
-    padding-right: 30px;
+    padding-right: 17px;
   }
 }

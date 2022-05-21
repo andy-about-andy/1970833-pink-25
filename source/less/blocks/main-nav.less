@@ -1,8 +1,8 @@
 .main-nav {
-  min-height: 66px;
+  z-index: 3;
+  min-height: 0;
   font-weight: 700;
   line-height: 32px;
-  z-index: 3;
 }
 
 .main-nav__toggle {
@@ -64,7 +64,6 @@
 
   .main-nav--nojs .main-nav__wrapper {
     position: static;
-    min-height: 0;
   }
 
   .main-nav--nojs .site-list__item {
@@ -133,15 +132,21 @@
 }
 
 .main-nav__wrapper {
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
-  top: 0;
+  position: absolute;
+  top: 67px;
   right: 0;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    top: 110px;
+  }
 
   @media (min-width: @desktop-width) {
+    position: static;
     width: 620px;
-    margin: 48px 65px 49px 0;
+    margin: 46px 65px 49px 0;
   }
 }
 

@@ -2,15 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 130px;
+  min-width: 130px;
   margin: 0 auto;
   text-decoration: none;
 
-  &:hover .footer-copyright-icon {
+  &:hover .copyright__icon {
     fill: @darkblue;
   }
 
-  &:active .footer-copyright-icon {
+  &:active .copyright__icon {
     fill: fade(@darkblue, 30%);
   }
 }
@@ -21,8 +21,12 @@
   font-size: 14px;
   line-height: 18px;
   color: @darkblue;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
-.footer-copyright-icon {
+.copyright__icon {
   fill: @pink;
 }
