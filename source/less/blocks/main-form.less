@@ -19,21 +19,14 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-
-  & q {
-    display: none;
-    quotes: none;
-  }
+  clip-path: inset(0 0 18% 0);
 
   @media (min-width: @tablet-width) {
     width: 490px;
     margin-top: 92px;
     margin-bottom: 71px;
     font-size: 18px;
-
-    & q {
-      display: inline;
-    }
+    clip-path: none;
   }
 
   @media (min-width: @desktop-width) {

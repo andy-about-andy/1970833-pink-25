@@ -13,19 +13,21 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+}
 
-    &--active {
-      position: relative;
+.site-list__item--active {
+  @media (min-width: @desktop-width) {
+    position: relative;
 
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: -12px;
-        left: 0;
-        height: 2px;
-        background-color: #ffffff;
-      }
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -12px;
+      left: 0;
+      height: 2px;
+      background-color: #ffffff;
     }
   }
 }
