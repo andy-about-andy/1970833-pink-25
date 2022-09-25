@@ -13,10 +13,14 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
      
-      - name: Install and Build 🔧
-        run: |
-            npm ci
-            npm run build
+      - name: Installing Dependencies
+        run: npm ci
+
+      - name: Linting
+        run: npm run lint
+
+      - name: Building
+        run: npm run build
  
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
