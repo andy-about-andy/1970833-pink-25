@@ -20,14 +20,15 @@ jobs:
         with:
           node-version: '16.x'
 
-      - name: Install and Build 🔧
-        run: |
-            npm ci
-            npm run build
+      - name: Installing Dependencies
+        run: npm ci
+
+      - name: Building 🔧
+        run: npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          folder: ./build
           branch: gh-pages
-          folder: build
